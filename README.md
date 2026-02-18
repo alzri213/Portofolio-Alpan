@@ -76,13 +76,11 @@ The dashboard page contains various statistics, including contributions from pla
 
 Report URL: https://pagespeed.web.dev/analysis/https-satriav2-vercel-app/yjcgcx7o2a?form_factor=desktop
 
-![image](https://github.com/fikrialifa/satria.com/assets/121304362/22628b99-fd71-4aff-b8d8-f744fef6e06c)
 
 - ### GTmetrix
 
 Report URL: https://gtmetrix.com/reports/satriav2.vercel.app/cRqM4gpB/
 
-![image](https://github.com/fikrialifa/satria.com/assets/121304362/872797d0-e027-4972-ae93-0343c607140d)
 <br /><br />
 
 ## Getting Started
