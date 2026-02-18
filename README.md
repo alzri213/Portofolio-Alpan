@@ -10,8 +10,6 @@
 </div>
 <br />
 
-<img width="1359" alt="image" src="https://github.com/fikrialifa/satria.com/assets/121304362/aefc17bd-5174-44ab-a1a2-61b66b3e3f66">
-
 
 
 
@@ -74,13 +72,12 @@ The dashboard page contains various statistics, including contributions from pla
 
 - ### PageSpeed Insights
 
-Report URL: https://pagespeed.web.dev/analysis/https-satriav2-vercel-app/yjcgcx7o2a?form_factor=desktop
+Report URL: 
 
 
 - ### GTmetrix
 
-Report URL: https://gtmetrix.com/reports/satriav2.vercel.app/cRqM4gpB/
-
+Report URL: 
 <br /><br />
 
 ## Getting Started
