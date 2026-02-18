@@ -3,6 +3,8 @@ import { type NextRequest } from "next/server";
 
 import { getAchievementsData } from "@/services/achievements";
 
+export const dynamic = "force-dynamic";
+
 export const GET = async (req: NextRequest) => {
   try {
     const searchParams = req.nextUrl.searchParams;
