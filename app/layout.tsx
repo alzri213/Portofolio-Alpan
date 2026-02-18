@@ -13,12 +13,13 @@ import NextAuthProvider from "@/SessionProvider";
 import { METADATA } from "@/common/constants/metadata";
 import { onestSans } from "@/common/styles/fonts";
 import { authOptions } from "@/common/libs/auth";
+import { getUserLocale } from "@/services/locale";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NODE_ENV === "development"
-      ? "http://localhost:3000"
-      : process.env.DOMAIN || "",
+    process.env.DOMAIN
+      ? (process.env.DOMAIN.startsWith('http') ? process.env.DOMAIN : `https://${process.env.DOMAIN}`)
+      : (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000")
   ),
   description: METADATA.description,
   keywords: METADATA.keyword,
@@ -38,11 +39,10 @@ export const metadata: Metadata = {
 
 const RootLayout = async ({
   children,
-  params: { locale },
 }: Readonly<{
   children: React.ReactNode;
-  params: { locale: string };
 }>) => {
+  const locale = await getUserLocale();
   const messages = await getMessages();
   const session = await getServerSession(authOptions);
 
@@ -68,7 +68,7 @@ const RootLayout = async ({
           speed={200}
           shadow="0 0 12px #3b82f6, 0 0 6px rgba(59, 130, 246, 0.4)"
         />
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <NextAuthProvider session={session}>
             <ThemeProviderContext>
               <Layouts>{children}</Layouts>
