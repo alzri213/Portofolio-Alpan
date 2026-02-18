@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-
 import Container from "@/common/components/elements/Container";
 
 const NotFound = () => {
@@ -10,7 +9,6 @@ const NotFound = () => {
 
   return (
     <Container
-      data-aos="fade-up"
       className="flex h-full flex-col items-center justify-center gap-y-6 transition-all duration-300"
     >
       <div className="relative">

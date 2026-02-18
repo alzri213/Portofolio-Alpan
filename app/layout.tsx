@@ -43,7 +43,12 @@ const RootLayout = async ({
   children: React.ReactNode;
 }>) => {
   const locale = await getUserLocale();
-  const messages = await getMessages();
+  let messages;
+  try {
+    messages = await getMessages();
+  } catch (error) {
+    messages = {};
+  }
   const session = await getServerSession(authOptions);
 
   return (
