@@ -1,0 +1,23 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Breakline from "@/common/components/elements/Breakline";
+
+import ContactList from "./ContactList";
+import ContactForm from "./ContactForm";
+
+const Contact = () => {
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+    >
+      <ContactList />
+      <Breakline className="my-6" />
+      <ContactForm />
+    </motion.div>
+  );
+};
+
+export default Contact;
