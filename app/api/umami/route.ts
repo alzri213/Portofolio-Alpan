@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { getPageViewsByDataRange, getWebsiteStats } from "@/services/umami";
 
+export const dynamic = "force-dynamic";
+
 export const GET = async () => {
   try {
     const pageViewsByDataRange = await getPageViewsByDataRange();

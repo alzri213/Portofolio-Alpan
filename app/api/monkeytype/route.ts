@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 
 import { getMonkeytypeData } from "@/services/monkeytype";
 
+export const dynamic = "force-dynamic";
+
 export const GET = async () => {
   try {
     const response = await getMonkeytypeData();

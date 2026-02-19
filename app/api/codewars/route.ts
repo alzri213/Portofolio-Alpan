@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 
 import { getCodewarsData } from "@/services/codewars";
 
+export const dynamic = "force-dynamic";
+
 export const GET = async () => {
   try {
     const response = await getCodewarsData();

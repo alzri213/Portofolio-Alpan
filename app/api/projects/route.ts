@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 
 import { getProjectsData } from "@/services/projects";
 
+export const dynamic = "force-dynamic";
+
 export const GET = async () => {
   try {
     const data = await getProjectsData();

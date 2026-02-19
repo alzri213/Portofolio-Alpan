@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@/common/utils/server";
 
+export const dynamic = "force-dynamic";
+
 export const DELETE = async (
   req: Request,
   { params }: { params: { slug: string } },
