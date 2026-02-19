@@ -15,6 +15,8 @@ import { onestSans } from "@/common/styles/fonts";
 import { authOptions } from "@/common/libs/auth";
 import { getUserLocale } from "@/services/locale";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.DOMAIN

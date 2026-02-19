@@ -1,5 +1,7 @@
 import { useTranslations } from "next-intl";
 
+export const dynamic = "force-dynamic";
+
 import Container from "@/common/components/elements/Container";
 import PageHeading from "@/common/components/elements/PageHeading";
 import Achievements from "@/modules/achievements";

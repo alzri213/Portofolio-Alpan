@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
 
+export const dynamic = "force-dynamic";
+
 import Container from "@/common/components/elements/Container";
 import PageHeading from "@/common/components/elements/PageHeading";
 import Dashboard from "@/modules/dashboard/components/Dashboard";

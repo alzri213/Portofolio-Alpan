@@ -4,6 +4,8 @@ import Container from "@/common/components/elements/Container";
 import Home from "@/modules/home";
 import { METADATA } from "@/common/constants/metadata";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: `${METADATA.creator} | Personal Website`,
   alternates: {
