@@ -6,7 +6,7 @@ export const PROJECTS_DUMMY: ProjectItem[] = [
         title: "Personal Portfolio Website",
         slug: "personal-portfolio",
         description: "Website portofolio modern yang dibangun dengan Next.js 14, Tailwind CSS, dan Supabase.",
-        image: "/images/projects/portfolio.png",
+        image: "/images/projects/portfolio_v2.png",
         link_demo: "https://fikrialifa.site",
         link_github: "https://github.com/alzri213",
         stacks: ["Next.js", "TypeScript", "Tailwind CSS"],
