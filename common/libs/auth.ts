@@ -13,7 +13,7 @@ export const authOptions: NextAuthOptions = {
             clientSecret: process.env.GITHUB_SECRET as string,
         }),
     ],
-    secret: process.env.NEXTAUTH_SECRET,
+    secret: process.env.NEXTAUTH_SECRET || "satria_auth_secret_key_123",
     callbacks: {
         async session({ session, token }) {
             return session;
